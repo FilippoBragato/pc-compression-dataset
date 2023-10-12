@@ -1,0 +1,9 @@
+high/
+low/
+medium/
+sensors_vehicles/
+__pycache__/
+```
+
+.out
+.log
