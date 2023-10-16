@@ -240,8 +240,7 @@ def get_ego_id(bboxpath):
                 return int(actor_id)
     return None
 
-def get_tlc_length(root:str, town:Town, traffic:Traffic, id:int, weather:Weather, time:Time, sensor:Sensor):
-    path = get_filepath(root, town, traffic, id, weather, time, sensor)
+def get_tlc_length(path):
     with h5py.File(path, "r") as f:
         main_group_key = list(f.keys())[0]
         idxs = list(f[main_group_key].keys())
